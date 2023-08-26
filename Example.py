@@ -1,6 +1,8 @@
 import openai
 
 openai.api_key = "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"
+#The above API Key will not work as it does not allow me to share it on GitHub
+#You will have to generate a new key and paste it instead of the above
 
 conversation = [
     {"role": "system", "content": "You are a helpful assistant."},

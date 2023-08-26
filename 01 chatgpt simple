@@ -1,6 +1,9 @@
+
 import openai
 
 openai.api_key = "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"
+#The above API Key will not work as it does not allow me to share it on GitHub
+#You will have to generate a new key and paste it instead of the above
 
 completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Give me 3 ideas for apps I could build with openai apis "}])
 print(completion.choices[0].message.content)

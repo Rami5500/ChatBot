@@ -2,6 +2,8 @@ import openai
 import gradio
 
 openai.api_key = "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"
+#The above API Key will not work as it does not allow me to share it on GitHub
+#You will have to generate a new key and paste it instead of the above
 
 messages = [{"role": "system", "content": "You are a financial expert that specializes in real estate investment and negotiation"}]
 
@@ -15,7 +17,7 @@ def CustomChatGPT(user_input):
     messages.append({"role": "assistant", "content": ChatGPT_reply})
     return ChatGPT_reply
 
-# Define your custom components for the UI
+# Custom components for the UI
 input_text = gradio.inputs.Textbox(lines=2, label="Enter your message:")
 output_text = gradio.outputs.Textbox(label="Assistant's Reply:")
 
